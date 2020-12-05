@@ -29,6 +29,9 @@ xhr.onload = function()
 
         for (const pr in data [property] ) {
           console.log(`${pr} : ${data [property][pr]}`);
+          console.log(typeof pr);
+          if(pr === "Name")
+           console.log("True");
         }
       }
 
