@@ -21,6 +21,11 @@ header {
     height: 20rem;
 }
 
+#myImage {
+    width: 40rem;
+    height: 60rem;
+}
+
 @media (min-width: 750px) {
     header {
         text-align: left;

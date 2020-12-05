@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", loadSingleItem);
 
 let output = "";
-
+let output2 = "";
 
 // load data 
 function loadSingleItem(e) {
@@ -11,9 +11,6 @@ function loadSingleItem(e) {
 
 
     let data = JSON.parse(urlparm.get('data'));
-
-    console.log(data.Images);
-
 
 
     output += `
@@ -31,10 +28,38 @@ function loadSingleItem(e) {
         </div>
                 `;
 
+    document.querySelector('#myrow').innerHTML = output;
+
+    output2 += `<div class="carousel-item active">
+    <img class="d-block w-100" src="${data.Logo}" alt="First slide">
+  </div>`;
+
+    // Second image slider 
+    data.Images.forEach(element => {
+
+        output2 += `
+        <div class="carousel-item ">
+        <img  id = "myImage" src="${element}">
+      </div>
+        `;
+        console.log(element);
+
+    });
+
+    output2 += `
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+    `;
 
 
 
-    document.getElementById('myrow').innerHTML = output;
+    document.querySelector('#myid').innerHTML = output2;
 
 
 }
