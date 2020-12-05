@@ -12,6 +12,8 @@ function loadSingleItem(e) {
 
     let data = JSON.parse(urlparm.get('data'));
 
+    console.log(data.Images);
+
 
 
     output += `
