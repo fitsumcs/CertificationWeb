@@ -4,7 +4,7 @@
             "Name": " Football Highlights ",
             "Version": " 1.0.1",
             "Description": "This is an app that you can use for Translating you English term to Afar",
-            "Technology": "Android , Java ",
+            "Technology": "Android , Java , JSON , REST API ",
             "Logo": "./assets/img/Apps/FT/logo.jpg",
             "Images": ["./assets/img/Apps/Dic/Sc1.jpg", "./assets/img/Apps/Dic/Sc2.jpg", "./assets/img/Apps/Dic/Sc3.jpg",
                 "./assets/img/Apps/Dic/Sc4.jpg", "./assets/img/Apps/Dic/Sc5.jpg", "./assets/img/Apps/Dic/Sc6.jpg", "./assets/img/Apps/Dic/Sc7.jpg", "./assets/img/Apps/Dic/Sc8.jpg"
@@ -15,7 +15,7 @@
             "Name": " Daily Shopping App",
             "Version": " 1.0.1",
             "Description": "This is an app that you can use for Translating you English term to Afar",
-            "Technology": "Android , Java ",
+            "Technology": "Android , Java , Firebase ",
             "Logo": "./assets/img/Apps/Shope/logo.jpg",
             "Images": ["./assets/img/Apps/FT/Sc1.jpg", "./assets/img/Apps/FT/Sc2.jpg", "./assets/img/Apps/FT/Sc3.jpg",
                 "./assets/img/Apps/FT/Sc4.jpg", "./assets/img/Apps/FT/Sc5.jpg"

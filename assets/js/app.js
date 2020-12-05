@@ -38,7 +38,7 @@ function loadDatas(e) {
                         <p>${data [property].Version}</p>
                         <p><img src="./assets/img/stars.png"></p>
                         <h5>${data [property].Technology}</h5>
-                        <h5><a href="#" >View More</a></h5>
+                        <h5><a href="detail.html?data=${data [property]}" >View More</a></h5>
                     </div>
                 </div> 
             </div>
