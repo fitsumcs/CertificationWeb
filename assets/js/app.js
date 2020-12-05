@@ -19,7 +19,7 @@ function loadDatas(e) {
             // Parse 
             const data = JSON.parse(this.responseText);
 
-
+            let output = '';
             for (const property in data) {
                 console.log(`${property}`);
                 console.log(`${data [property].Name}`);
@@ -28,28 +28,34 @@ function loadDatas(e) {
                 console.log(`${data [property].Technology}`);
                 console.log(`${data [property].Logo}`);
 
+                output += `
+           
+                <div class="four columns">
+                <div class="card">
+                    <img src="${data [property].Logo}" class="course-image u-full-width">
+                    <div class="info-card">
+                        <h4>${data [property].Name}</h4>
+                        <p>${data [property].Version}</p>
+                        <img src="./assets/img/stars.png">
+                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
+                        <a href="#" >View More</a>
+                    </div>
+                </div> 
+            </div>
+                
+           
+           
+                    `;
+
+
+
+
 
             }
 
 
 
-
-
-            // let output = '';
-            // cu.forEach(cu => {
-            //   output += `
-            // <ul>
-            // <li>ID : ${cu.id}</li>
-            // <li>Name : ${cu.name}</li>
-            // <li>Company : ${cu.company}</li>
-            // <li>phone : ${cu.phone}</li>
-            // </ul>`;
-            // });
-
-
-
-
-            // document.getElementById('customers').innerHTML = output;
+            document.getElementById('myrow').innerHTML = output;
         }
     }
     xhr.send();
