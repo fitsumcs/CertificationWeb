@@ -16,7 +16,6 @@ function loadSingleItem(e) {
     output += `
             <div class="six columns">
             <div class="card">
-                <img src="${data.Logo}" >
                 <div class="info-card">
                     <h4>${data.Name}</h4>
                     <p>${data.Version}</p>
@@ -31,7 +30,7 @@ function loadSingleItem(e) {
     document.querySelector('#myrow').innerHTML = output;
 
     output2 += `<div class="carousel-item active">
-    <img class="d-block w-100" src="${data.Logo}" alt="First slide">
+    <img class="myImage" src="${data.Logo}" alt="First slide">
   </div>`;
 
     // Second image slider 
@@ -39,7 +38,7 @@ function loadSingleItem(e) {
 
         output2 += `
         <div class="carousel-item ">
-        <img  id = "myImage" src="${element}">
+        <img  class = "myImage" src="${element}">
       </div>
         `;
         console.log(element);

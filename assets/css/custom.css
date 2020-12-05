@@ -21,7 +21,7 @@ header {
     height: 20rem;
 }
 
-#myImage {
+.myImage {
     width: 40rem;
     height: 60rem;
 }
