@@ -28,7 +28,7 @@ xhr.onload = function()
         console.log(`${property}`);
 
         for (const pr in data [property] ) {
-          console.log(`${pr}`);
+          console.log(`${pr} : ${data [property][pr]}`);
         }
       }
 
