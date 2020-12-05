@@ -21,12 +21,6 @@ function loadDatas(e) {
 
             let output = '';
             for (const property in data) {
-                console.log(`${property}`);
-                console.log(`${data [property].Name}`);
-                console.log(`${data [property].Version}`);
-                console.log(`${data [property].Description}`);
-                console.log(`${data [property].Technology}`);
-                console.log(`${data [property].Logo}`);
 
                 output += `
            
@@ -38,7 +32,7 @@ function loadDatas(e) {
                         <p>${data [property].Version}</p>
                         <p><img src="./assets/img/stars.png"></p>
                         <h5>${data [property].Technology}</h5>
-                        <h5><a href="detail.html?data=${data [property]}" >View More</a></h5>
+                        <h5><a href="detail.html?data=${ encodeURIComponent(JSON.stringify(data[property]))}" >View More</a></h5>
                     </div>
                 </div> 
             </div>
