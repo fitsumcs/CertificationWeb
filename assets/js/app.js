@@ -32,19 +32,16 @@ function loadDatas(e) {
            
                 <div class="four columns">
                 <div class="card">
-                    <img src="${data [property].Logo}" class="course-image u-full-width">
+                    <img src="${data [property].Logo}" id="app-image">
                     <div class="info-card">
                         <h4>${data [property].Name}</h4>
                         <p>${data [property].Version}</p>
-                        <img src="./assets/img/stars.png">
-                        <p class="price">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" >View More</a>
+                        <p><img src="./assets/img/stars.png"></p>
+                        <h5>${data [property].Technology}</h5>
+                        <h5><a href="#" >View More</a></h5>
                     </div>
                 </div> 
             </div>
-                
-           
-           
                     `;
 
 
