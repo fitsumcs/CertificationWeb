@@ -1,0 +1,24 @@
+{
+    
+    "App 1 " : [
+        {
+            "Name " : " English to Afar Dictionary " , 
+            "Version "  : " 1.0.1",
+            "Description " : "This is an app that you can use for Translating you English term to Afar" , 
+            "Technology " : "Android , Java "
+        } ,
+        {
+            "Logo " : "./assets/img/Apps/Dic/logo.png"
+        },
+
+        {
+            "Images " :   [
+                "sadsad", "asdsad"
+            ]
+        }
+      
+
+      
+
+    ]
+}
