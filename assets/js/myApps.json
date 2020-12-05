@@ -1,7 +1,6 @@
-[
     {
     
-    "App 1 " : 
+    "App1" : 
         {
             "Name " : " Football Highlights " , 
             "Version "  : " 1.0.1",
@@ -13,7 +12,7 @@
               , "./assets/img/Apps/Dic/Sc8.jpg"]
         } , 
 
-        "App 2 " : 
+        "App2" : 
         {
             "Name " : " Daily Shopping App" , 
             "Version "  : " 1.0.1",
@@ -24,7 +23,7 @@
                 "./assets/img/Apps/FT/Sc4.jpg", "./assets/img/Apps/FT/Sc5.jpg"]
         },
 
-        "App 3 " : 
+        "App3" : 
         {
             "Name " : " English to Afar Dictionary " , 
             "Version "  : " 1.0.1",
@@ -38,4 +37,3 @@
 
     
 }
-]

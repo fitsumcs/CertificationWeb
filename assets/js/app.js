@@ -1,4 +1,5 @@
 
+//onload
 document.addEventListener("DOMContentLoaded", loadDatas);
 
 
@@ -9,7 +10,10 @@ function loadDatas(e)
   
   const xhr = new XMLHttpRequest();
  
-  xhr.open('GET', './app.js', true);
+  xhr.open('GET', '/assets/js/myApps.json', true);
+
+  // xhr.setRequestHeader('X-PINGOTHER', 'pingpong');
+  // xhr.setRequestHeader('Content-Type', 'application/json');
 
 xhr.onload = function()
 {
@@ -17,22 +21,36 @@ xhr.onload = function()
   {
     
     // Parse 
-    const cu = JSON.parse(this.responseText);
-    let output = '';
-    cu.forEach(cu => {
-      output += `
-    <ul>
-    <li>ID : ${cu.id}</li>
-    <li>Name : ${cu.name}</li>
-    <li>Company : ${cu.company}</li>
-    <li>phone : ${cu.phone}</li>
-    </ul>`;
-    });
+    const data = JSON.parse(this.responseText);
+
+ 
+      for (const property in data ) {
+        console.log(`${property}`);
+
+        for (const pr in data [property] ) {
+          console.log(`${pr}`);
+        }
+      }
+
+
+   
+
+
+    // let output = '';
+    // cu.forEach(cu => {
+    //   output += `
+    // <ul>
+    // <li>ID : ${cu.id}</li>
+    // <li>Name : ${cu.name}</li>
+    // <li>Company : ${cu.company}</li>
+    // <li>phone : ${cu.phone}</li>
+    // </ul>`;
+    // });
 
   
     
     
-    document.getElementById('customers').innerHTML = output;
+    // document.getElementById('customers').innerHTML = output;
   }
 }
 xhr.send();
