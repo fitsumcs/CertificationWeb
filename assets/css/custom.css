@@ -32,8 +32,9 @@ ul {
 }
 #hero {
     background-image:url(../img/hero.jpg);
-    height: 350px;
-    background-size: cover;
+    height: 250px;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 #heading {
     margin: 30px 0;
@@ -122,6 +123,12 @@ ul {
 }
 .icon3 {
     background-image: url(../img/icon3.png);
+}
+
+#courses-list  .container {
+    margin:0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #courses-list .row {
