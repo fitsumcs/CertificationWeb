@@ -152,14 +152,18 @@ ul {
     background-image: url(../img/icon3.png);
 }
 
-#courses-list .container {
+#Dmyrow {
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 4rem;
+    width: 50rem;
 }
 
-#courses-list .row {
-    margin-bottom: 20px;
+.carousel-control-prev-icon {
+    background-color: green;
+}
+
+.carousel-control-next-icon {
+    background-color: green;
 }
 
 .add-to-cart {

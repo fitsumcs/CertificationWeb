@@ -27,7 +27,7 @@ function loadSingleItem(e) {
         </div>
                 `;
 
-    document.querySelector('#myrow').innerHTML = output;
+    document.querySelector('#Dmyrow').innerHTML = output;
 
     output2 += `<div class="carousel-item active">
     <img class="myImage" src="${data.Logo}" alt="First slide">
