@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", loadDatas);
 // load data 
 function loadDatas(e) {
 
+
+
     const xhr = new XMLHttpRequest();
+
+    xhr .overrideMimeType("application/json");
 
     xhr.open('GET', '/assets/js/myapp.json', true);
 
