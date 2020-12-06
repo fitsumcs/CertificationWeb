@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assets/css/custom.css">
+
+    <link rel="stylesheet" href="./assets/css/contact-form.css">
+
 </head>
 
 <body>
@@ -59,6 +62,59 @@
         <!-- Row Start -->
         <div class="row" id="myrow">
 
+            <div class="six columns">
+                
+                This is About Page 
+
+            </div>
+
+            <div class="six columns" id="second-Col">
+                
+                  <!-- Form Started -->
+               
+                <div class="fcf-body">
+
+                    <div id="fcf-form">
+                    <h3 class="fcf-h3">Contact us</h3>
+                
+                    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                        
+                        <div class="fcf-form-group">
+                            <label for="Name" class="fcf-label">Your name</label>
+                            <div class="fcf-input-group">
+                                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                            </div>
+                        </div>
+                
+                        <div class="fcf-form-group">
+                            <label for="Email" class="fcf-label">Your email address</label>
+                            <div class="fcf-input-group">
+                                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                            </div>
+                        </div>
+                
+                        <div class="fcf-form-group">
+                            <label for="Message" class="fcf-label">Your message</label>
+                            <div class="fcf-input-group">
+                                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div>
+                
+                        <div class="fcf-form-group">
+                            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                        </div>
+                
+                    </form>
+                    </div>
+                
+                </div>
+
+
+
+                <!-- Form Ended -->
+
+            </div>
+
         </div>
         <!--.row-->
 
@@ -67,23 +123,15 @@
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
-                <div class="three columns">
-                    <nav id="primary" class="menu">
-                        <h4><a class="link" href="https://www.fitsumcs.com" target="_blank">Developed By Fitsum@2020</a></h4>
-                    </nav>
-                </div>
                 <div class="two columns">
                     <nav id="primary" class="menu">
-                        <h4><a class="link" href="about.html" >About</a></h4>
+                        <h4><a class="link" href="index.html" >Go Back</a></h4>
                     </nav>
                 </div>
             </div>
         </div>
-
-        
     </footer>
 
-    <script src="./assets/js/app.js"></script>
 
 </body>
 
