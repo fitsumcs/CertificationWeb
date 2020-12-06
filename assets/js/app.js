@@ -8,7 +8,7 @@ function loadDatas(e) {
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'myApps.json', true);
+    xhr.open('GET', './myApps.json', true);
 
     // xhr.setRequestHeader('X-PINGOTHER', 'pingpong');
     // xhr.setRequestHeader('Content-Type', 'application/json');
