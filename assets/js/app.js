@@ -10,9 +10,6 @@ function loadDatas(e) {
 
     xhr.open('GET', '/assets/js/myapp.json', true);
 
-    // xhr.setRequestHeader('X-PINGOTHER', 'pingpong');
-    // xhr.setRequestHeader('Content-Type', 'application/json');
-
     xhr.onload = function() {
         if (xhr.status === 200) {
 
@@ -38,13 +35,7 @@ function loadDatas(e) {
             </div>
                     `;
 
-
-
-
-
             }
-
-
 
             document.getElementById('myrow').innerHTML = output;
         }

@@ -56,9 +56,6 @@ function loadSingleItem(e) {
                     </a>
     `;
 
-
-
     document.querySelector('#myid').innerHTML = output2;
-
 
 }
