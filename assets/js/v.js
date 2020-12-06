@@ -1,5 +1,5 @@
     
-    var DATA = {
+    let DATA = {
 
         "App1": {
             "Name": " Football Highlights ",

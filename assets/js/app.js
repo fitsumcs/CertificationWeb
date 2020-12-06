@@ -6,7 +6,7 @@ function loadDatas(e) {
 
 
             // Parse 
-            const data = DATA;
+            let data = DATA;
 
             let output = '';
             for (const property in data) {
