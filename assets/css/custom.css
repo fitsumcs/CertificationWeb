@@ -57,6 +57,10 @@ ul {
 }
 #nyrow{
     margin-bottom: 4rem;
+    padding-right: 4rem;
+}
+#col1{
+    padding: 2rem;
 }
 
 .submenu {
