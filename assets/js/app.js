@@ -1,24 +1,12 @@
 //onload
 document.addEventListener("DOMContentLoaded", loadDatas);
 
-
-
 // load data 
 function loadDatas(e) {
 
 
-
-    const xhr = new XMLHttpRequest();
-
-    xhr .overrideMimeType("application/json");
-
-    xhr.open('GET', '/assets/js/myapp.json', true);
-
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-
             // Parse 
-            const data = JSON.parse(this.responseText);
+            const data = DATA;
 
             let output = '';
             for (const property in data) {
@@ -42,8 +30,7 @@ function loadDatas(e) {
             }
 
             document.getElementById('myrow').innerHTML = output;
-        }
-    }
-    xhr.send();
+        
+
 
 }
